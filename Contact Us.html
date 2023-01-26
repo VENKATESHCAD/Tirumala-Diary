@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is travelling guide website">
+    <meta name="keywords" content="Tirupati, Tirumala, Alipiri, Venkatesh, Padmavati, Maha Laxmi, Tirtumala Tirupati Devasthanam">
+    <meta name="robots" content="index, follow">
+    <title>Tirumala Diary</title>
+    <link rel="stylesheet" href="venkatesh.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="image/shankh chakra.jpg">
+</head>
+<body >
+    <header>
+        <img src="image/shankh chakra.jpg" alt="logo" id="navimage">
+        <nav id="nav">
+            <ul id="navlist">
+                <li><h1 id="heading"> Tirumala Diary </h1></li>
+    
+                <li><a href="home.html" id="home"><i class="fa fa-home" style="font-size:20px"></i> Home </a></li>
+    
+                <li><a href="About.html" id="About"class="nav"><i class="fa fa-user-o" aria-hidden="true" style="font-size:18px"></i>About</a></li>
+                <div id="Aboutsubmenu">
+                    <ul>
+                        <li><a href="#">History Background</a></li>
+                        <li><a href="#">Important Places in Tirupati</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </div>
+                <li><a href="Vlog.html" id="Vlog"class="nav"><i class="fa fa-coffee" aria-hidden="true" aria-hidden="true" style="font-size:18px"></i>Vlog</a></li>
+    
+                <li><a href="Contact Us.html" id="contact"class="nav" style="color:goldenrod;font-size:23px"><i class="fa fa-address-book" aria-hidden="true" aria-hidden="true" style="font-size:23px"></i>Contact Us</a></li>
+    
+                <li><a href="Gallery.html" id="gallery"class="nav"><i class="fa fa-camera" aria-hidden="true" aria-hidden="true" style="font-size:18px"></i>Gallery</a></li>
+        </ul>
+        </nav>
+    </header>
+    <div id="headingdivision"> 
+
+    </div>
+    <style>
+        
+        ol {
+                display: table;
+                margin: 0 auto;
+            }
+        prep{
+                color:yellow;
+            }
+        #legend1{
+                color:yellow;
+                font-size:xx-large;
+                font-weight: 100;
+                font-family:cursive;
+            }
+        fieldset{
+            background-color:black;
+            font-weight: 100;
+            font-family:cursive;
+        }
+    </style>
+<div>
+<img src="image/contact us background.jpg" alt="loading please wait" id="contactimg">
+<div id="contact1">
+<!-- Fieldset tag is used to provide border abount content -->
+<fieldset>
+<!-- Legend tag is used to provide name mention on box created by field set -->
+    <legend id="legend1" > <strong>Contact Us</strong></legend>
+    <prep>
+        On following contact numbers:
+        <ol type="1">
+            <li align="center">9528718876</li>
+            <li>8532022398</li>
+            <li>9411439210</li>
+        </ol>
+        Email: venkteshnarayan1989@gmail.com
+    </prep>
+</fieldset>
+</div>
+<div id="querydiv" style="border: 3px solid">
+    <h3 id="queryheading" style="border: 2px solid" align="center">Please let me know if you have any query or concern</h3>
+    <form action="backend.php">
+        <!-- I have added name of every element after type of the element. With these name the information about such elements will be saved in the backend  -->
+        <spam>
+            <label for="Name:"class="queryform1">Name:</label> <input type="text" name="My Name"id="Name:"class="queryform">
+        </spam>
+        <spam>
+            <label for= "City:" class="queryform1">City:</label> <input type="text" name="My City" id="City:"class="queryform">
+        </spam>
+        <br>
+        <br>
+        <spam>
+            <label for="Mobile Number:"class="queryform1">Mobile Number:<label> <input type="number" name="My Molibe Number"id="mobile"class="queryform">
+        </spam>
+        <spam>
+            <label for="Email:" class="queryform1" id="emailcontact">Email:</label> <input type="email" name="My Email" class="queryform">
+        </spam>
+        <br>
+        <br>
+        <div>
+            <label for="Date of Birth:" class="queryform1">Date of Birth:</label> <input type="date" name="My Date"id="Date:" class="queryform">
+        </div>
+        <br>
+        <span class="queryform1">
+            Gender: Male<input type="radio" name="My Gender"> Female <input type="radio" name="My Gender"> Other <input type="radio" name="My Gender">
+        </span>
+        <span id="checkboxtitle" class="queryform1" >
+            Are you devotee?:<input type="checkbox" name="devotee" checked>
+        </span>
+        <br>
+        <br>
+        <div>
+            <strong class="queryform1">Upload Photograph:</strong>     <input type="file" name="My Photo" accept="image/png, image/jpeg, image/jpg"class="queryform">
+        </div>
+        <br>
+        <spam>
+            <strong class="queryform1">Write your queries</strong>
+        </spam>
+        <br>
+        <br>
+        <div>
+            <textarea name="My Text" cols="80" rows="10" id="textback"></textarea>
+        </div>
+        <br>
+        <br>
+        <spam>
+            <input type="submit" value="Submit Now" class="querybutton">
+        </spam>
+        <spam>
+           <input type="reset" value="Reset" class="querybutton">>
+        </spam>
+</div>
+</div>
+
+</body>
+</html>

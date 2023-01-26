@@ -1,0 +1,40 @@
+<a href="home1.html" id="homered">LINK1</a>
+<a href="home1.html" id="homered">LINK2</a>
+<a href="home1.html" id="homered">LINK3</a>
+
+
+border: 2px solid darkgoldenrod;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+
+<!-- The grid: four columns -->
+<div class="row">
+    <div class="column">
+      <img src="image/gallery1.jpg" alt="image1" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="image/gallery2.jpg" alt="image2" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="image/gallery3.jpg" alt="image3" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="image/gallery4.jpg" alt="image4" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="image/gallery5.jpg" alt="image5" onclick="myFunction(this);">
+    </div>
+</div>
+  
+  <!-- The expanding image container -->
+<div class="container">
+    <!-- Close the image -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  
+    <!-- Expanded image -->
+    <img id="expandedImg" style="width:100%">
+  
+    <!-- Image text -->
+    <div id="imgtext"></div>
+</div>
